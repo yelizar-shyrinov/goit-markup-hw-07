@@ -1,0 +1,37 @@
+.team-section {
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background-color: var(--white);
+            border-radius: 50%;
+
+            fill: #afb1b8;
+            transition: background-color 250ms var(--timing-function);
+
+            &:hover,
+            &:focus {
+                background-color: var(--accent-color);
+                fill: var(--white);
+            }
+        }
+
+    }
+
+    &__list {
+        margin-top: -15px;
+    }
+}
